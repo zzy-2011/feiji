@@ -21,7 +21,7 @@ python -m http.server 8000
 ```
 
 ## 在线试玩
-**https://zzy-2011.github.io/plane-game/**
+**https://zzy-2011.github.io/feiji/**
 
 ## 文件结构
 ```
