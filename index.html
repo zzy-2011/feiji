@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>飞机大战 · Plane Shooter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>✈️ 飞机大战</h1>
+      <div class="scores">
+        <div class="score-box"><span class="label">分数</span><span id="score">0</span></div>
+        <div class="score-box"><span class="label">生命</span><span id="lives">3</span></div>
+      </div>
+    </header>
+    <div class="bar">
+      <p class="tip">← → / A D 移动，触屏拖动飞机；自动开火，击落敌机得分</p>
+      <button id="new">开始 / 重来</button>
+    </div>
+    <div class="stage">
+      <canvas id="game" width="400" height="600"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="panel">
+          <div class="big" id="ov-title">飞机大战</div>
+          <div class="sub" id="ov-sub">点击开始，击落所有敌机！</div>
+          <button id="ov-btn">开始游戏</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
